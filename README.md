@@ -1,7 +1,7 @@
 # gtkmm-demo
 a demo for gtkmm
 
-# denpendencies
+# dependencies
     sudo apt install libgtkmm-3.0-dev
 
 # build
