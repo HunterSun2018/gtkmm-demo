@@ -35,5 +35,5 @@ protected:
     Glib::RefPtr<Gtk::TreeStore> m_refTreeModel;
 
     Gtk::ButtonBox m_ButtonBox;
-    Gtk::Button m_Button_Quit;
+    Gtk::Button m_Button_Quit;    
 };

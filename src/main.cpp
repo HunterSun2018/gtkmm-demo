@@ -16,7 +16,7 @@ public:
 
         m_paned.add1(m_navigation);
         m_paned.add2(m_list_view);
-        m_paned.set_position(200);
+        m_paned.set_position(240);
 
         show_all_children();
     }
@@ -42,11 +42,10 @@ protected:
 int main(int argc, char *argv[])
 {
     auto app = Gtk::Application::create(argc, argv, u8"me.hunter.www");
-    //app->set_id("test");
-
+    
     HelloGtk window;
 
-    window.set_default_size(1024, 768);
+    window.set_default_size(1024, 576);
     window.set_position(Gtk::WIN_POS_CENTER_ALWAYS);
 
     return app->run(window);
