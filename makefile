@@ -1,7 +1,7 @@
 PROG = demo
 CXX = clang++
-CPPFLAGS = -c -g -std=c++17 `pkg-config gtkmm-3.0 --cflags` 
-LDFLAGS = `pkg-config gtkmm-3.0 --libs` -lcpprest -lboost_system -lcrypto
+CPPFLAGS = -c -g -std=c++17 -std=libc++ pkg-config gtkmm-3.0 --cflags` 
+LDFLAGS = `pkg-config gtkmm-3.0 --libs` -lcpprest -lboost_system -lcrypto -lpthread
 OBJS = main.o navigation.o list_view.o
 
 $(PROG) : $(OBJS)
