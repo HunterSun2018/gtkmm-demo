@@ -1,5 +1,5 @@
 PROG = demo
-CXX = clang++
+CXX = c++
 CPPFLAGS = -g -std=c++17 `pkg-config gtkmm-3.0 --cflags` -Wdeprecated-declarations
 LDFLAGS = `pkg-config gtkmm-3.0 --libs` -lcpprest -lboost_system -lcrypto
 OBJS = main.o navigation.o list_view.o

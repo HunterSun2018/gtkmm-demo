@@ -10,8 +10,10 @@ public:
     {
         set_border_width(10);
 
-        m_btn.signal_clicked().connect(sigc::mem_fun(*this, &HelloGtk::on_button_clicked));
+        //m_btn.signal_clicked().connect(sigc::mem_fun(*this, &HelloGtk::on_button_clicked));
+        m_btn.signal_clicked().connect([this](){ close(); });
 
+        //add(m_btn);
         add(m_paned);
 
         m_paned.add1(m_navigation);
